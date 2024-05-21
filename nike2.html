@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NIKE</title>
+    <!-- <link rel="stylesheet" href="nike2.css"> -->
+    <style>
+        * {
+            box-sizing: border-box;
+        } 
+        
+        header {
+            background-color: whitesmoke;
+            color: black;
+            padding: 30px;
+            font-size: 12.5px;
+            font-weight: lighter;
+            text-align:center; 
+            
+        }
+        
+        .flex-container {
+            display: flex;
+            height: 40px;
+            justify-content: flex-end;
+            align-items: center;
+            letter-spacing: 2px;
+            flex-direction: row;
+        }
+        
+        .flex-container2 {
+            display: flex;
+            background-color: white;
+            height: 40px;
+            color: black;
+            justify-content: space-around;
+            align-items: center;
+            letter-spacing: 2px;
+            flex-direction: row;
+        }
+        .flex-containert1 {
+            display:flex;
+            background-color: white;
+            color: black;
+            justify-content: space-around;
+            align-items: center;
+            letter-spacing: 1px;
+            flex-direction:row;
+            font-size: 12px;
+            left:40%;
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+
+        .flex-container3 {
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 4px;
+            flex-direction: row;
+            font-size: 25px;
+            font-weight: bolder;
+            width: 1275px;
+        }
+        
+        .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 20px;
+        }
+        
+        .grid-container1{
+            width: 1275px;
+            height: 575px;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            padding: 0%;
+            border: 1px;
+          
+        }
+        .grid-container4{
+            display: grid;
+            text-align: center;
+            justify-content: space-around;
+            color: black;
+            background-color: white;
+            font-size: 50px;
+            letter-spacing: normal;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+           
+        }
+        .ptext{
+            color: aliceblue;
+           position:absolute;
+           top: 76%;
+           justify-content: space-around;
+            bottom: 90%;
+            width: 100%;
+           text-align:start;
+            letter-spacing: normal;
+            font-size: 16px;
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+        
+        .grid-container {
+            display: grid;
+            width: 50px;
+            height: 50px;
+            display:inline-block;
+            margin: 0 auto;
+        }
+        
+        .grid-container2 {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+        .grid-container5{
+            display: grid;
+            width: 580px;
+            height: 455px;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            padding: 0%;
+            border: 1px;
+          
+        }
+        .grid-container5 img {
+            width: 120%; /* Make the image fill its container */
+            height: auto; /* Let the height adjust proportionally */
+        }
+        .grid-container6{
+            display: grid;
+            width: 1280px;
+            height: 455px;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            padding: 0%;
+            border: 1px;
+          
+        }
+        .grid-container7{
+            display: grid;
+            font-size: 40px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: black;
+            background-color: white;
+            justify-content: left;
+            text-align:start;
+
+        }
+        .grid-containerx {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* Five columns with equal width */
+            gap: 10px; /* Gap between images */
+            justify-content: center; /* Center the grid horizontally */
+            margin-top: 20px; /* Add space between div.a and the grid */
+            overflow: hidden; /* Hide overflow */
+            position: relative; /* Position for absolute buttons */
+        }
+
+        .grid-containerx img {
+            max-width:300px; /* Ensure images don't exceed their container width */
+            line-height:28px; /* Maintain aspect ratio */
+        }
+        .grid-containery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Five columns with equal width */
+            gap: 10px; /* Gap between images */
+            justify-content: center; /* Center the grid horizontally */
+            margin-top: 20px; /* Add space between div.a and the grid */
+            overflow: hidden; /* Hide overflow */
+            position: relative; /* Position for absolute buttons */
+        }
+        .grid-containery img{
+            max-width:400px; /* Ensure images don't exceed their container width */
+            line-height:28px;
+        }
+        .grid-containerz {
+            display: grid;
+            width: 378px;
+            height: 455px;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            padding: 0px;
+            border: 1px;
+        }
+
+        /* Previous and next button styles */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+        .shop-button {
+    display: inline-block;
+    color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 11%;
+    transform: translateX(-50%);
+    font-size: 14px; 
+      background-color:white; 
+      
+}
+
+.shop-button:hover {
+    background-color:gray;
+}
+    </style>
+</head>
+<body>
+    <header class="flex-container">
+        <h1></h1>
+        <img src="image 1.svg" alt="Icon 1" class="icon">
+        <img src="download (1).svg" alt="Icon 2" class="icon">
+        <div style="width: 850px;"></div>
+        <h2></h2>
+
+        <div>Find a store|</div>
+        <div>Help|</div>
+        <div>Join Us|</div>
+        <div>Sign In|</div>
+    </header>
+    
+    <header class="flex-container2">
+        <h3></h3>
+        <a href="https://www.nike.com/">
+        <img src="nike.png">
+        </a>
+        <a href="https://www.nike.com/w/new-3n82y">
+        <div>New & Featured</div>
+    </a>
+    <a href="https://www.nike.com/men"></a>
+        <div>Men</div>
+    </a>
+    <a href=" https://www.nike.com/women">
+        <div>Women</div>
+    </a>
+    <a href="https://www.nike.com/kids">
+        <div>Kids</div>
+    </a>
+    <a href="https://www.nike.com/jordan">
+        <div>Accessories</div>
+    </a>
+    <a href="https://www.nike.com/w/sale-3yaep">
+        <div>Sale</div>
+    </a>
+        <div class="search" style="float: right; height: 20px;">
+            <input type="text" placeholder="search" name="search">
+            <button type="submit">search</button>
+        </div>
+        <a href="https://www.nike.com/favorites">
+        <img src="heart.nike.svg">
+    </a>
+    <a href="https://www.nike.com/cart">
+        <div style="width: 10px; height: 90px;"></div>
+    </a>
+        </div>
+        <img src="download (2).svg">
+        <div style="width: 10px; height: 90px;"></div>
+    </header>
+    <header class="flex-container3">
+    <div>Get Your Gear Faster</div>
+    </header>
+    <diV>
+    <a href="https://www.nike.com/w/basketball-lifestyle-atnao">
+    <img src="https://static.nike.com/a/images/f_auto/dpr_1.2,cs_srgb/w_1579,c_limit/1764af2f-598e-4718-a889-493500f016f3/nike-just-do-it.jpg"  class="grid-container1">
+    </a>
+    </diV>
+    <div class="grid-container4">FAST FORWARD <br>REWIND</div>
+    <div class="grid-container4">
+    <div style="display: block;">
+    <div class="grid-container4">
+    <a href=" https://www.nike.com/w/basketball-lifestyle-atnao">
+    <button style="font-size: 11px; padding: 10px 20px;  border-radius: 20px; background-color: black; color: white;">Shop Now</button></div>
+    </a>
+    </div>
+    </div>
+    <div class="grid-container2"></div>
+            <div class="grid-container5">
+                <a href="https://www.nike.com/w/trail-running-75jcn">
+                <img src="nike-just-do-it.jpg">
+                </a>
+                <div class="ptext">Tame the Terrain<br>Nike Zegama 2</div>
+                <a href="https://www.nike.com/w/trail-running-75jcn" class="shop-button">Shop</a>
+            </div>
+            <div class="grid-container5">
+                <a href="https://www.nike.com/w/new-jordan-37eefz3n82y">
+                <img src="nike-just-do-it (1).jpg">
+            </a>
+                <div class="ptext">Mother's Day<br>Gift for Togather Time</div>
+                <a href="https://www.nike.com/w/new-jordan-37eefz3n82y" class="shop-button">Shop</a>
+            </div>
+  
+            <div class="grid-container5">
+                <a href="https://www.nike.com/w/womens-walking-5e1x6zb3e0k">
+                <img src="nike-just-do-it (2).jpg">
+            </a>
+                <div class="ptext">Make your Move<br>New Fitness Essentiala</div>
+                <a href="https://www.nike.com/w/womens-walking-5e1x6zb3e0k" class="shop-button">Shop</a>
+            </div>
+            <div class="grid-container5">
+                <a href="https://www.nike.com/w/mens-training-gym-clothing-58jtoz6ymx6znik1">
+                <img src="nike-just-do-it (3).jpg">
+            </a>
+                <div class="ptext">Nike versatile Appearl<br>Workout styles<br>For Summer</div>
+                <a href="https://www.nike.com/w/mens-training-gym-clothing-58jtoz6ymx6znik1" class="shop-button">Shop</a>
+            </div>
+            <div class="grid-container4">NEW THIS WEEK</div>
+            <div>
+            <div class="grid-container4">
+                <div style="display: block;">
+                    <button style="font-size: 10px; padding: 10px 20px;  border-radius: 20px; background-color: black; color: white;">Shop Men's New Arrival</button>
+                    <button style="font-size: 10px; padding: 10px 20px;  border-radius: 20px; background-color: black; color: white;">Shop Women's New Arrival</button>
+                    <button style="font-size: 10px; padding: 10px 20px;  border-radius: 20px; background-color: black; color: white;">Shop Kid's New Arrival</button>
+                </div>
+                </div>
+                <div class="grid-container2"></div>
+                <diV>
+                    <img src="nike-just-do-it (4).jpg"  class="grid-container6">
+                  </diV>
+            <div class="grid-container2"></div>
+                </div>
+                <div class="grid-container7">SHOP BY CLASSICS</div>
+                <div>
+                    <div class="grid-container2"></div>
+
+                    <div class="grid-containerx">
+                        <div>
+                        <img src="shoe1.jpg" alt="Image 1" class="imagex">
+                    </div>
+                    <div>
+                        <img src="shoe2.jpg" alt="Image 2" class="imagex">
+                    </div>
+                    <div >
+                        <img src="shoe3.jpg" alt="Image 3" class="imagex">
+                    </div>
+                    <div>
+                        <img src="shoe4.jpg" alt="Image 4" class="imagex">
+                    </div>
+                    <div>
+                        <img src="shoe5.jpg" alt="Image 5" class="imagex">
+                    </div>
+                    <div>
+                        <img src="shoe6.jpg" alt="Image 5" class="imagex">
+                    </div>
+                    <button class="prev" onclick="prevImage()">&#10094;</button>
+                    <button class="next" onclick="nextImage()">&#10095;</button>
+                        </div>
+                        <div class="grid-container2"></div>
+
+                        <div class="grid-containery">
+                            <div class="grid-containerz">
+                                <a href="https://www.nike.com/membership/member-product">
+                                <img src="nike7.jpg" alt="Image 1" class="imagey">
+                                </a>
+                                <div class="ptext">Member Product<br>Your Exclusive Access</div>
+                                <a href="https://www.nike.com/membership/member-product" class="shop-button">Shop</a>
+                            </div>
+                            <div class="grid-containerz"> 
+                                <a href="https://www.nike.com/membership/sport-wellness-apps">
+                                <img src="nike 8.jpg" alt="Image 1" class="imagey">
+                            </a>
+                                <div class="ptext">Sports & Wellness App<br>Movement Where You're At</div>
+                                <a href="#" class="shop-button">Move</a>
+                            </div>
+                            <div class="grid-containerz">
+                                <a href="https://www.nike.com/nike-by-you">
+                                <img src="nike9.jpg" alt="Image 1" class="imagey">
+                            </a>
+                                <div class="ptext">Nike By You<br>Your Customization Service</div>
+                                <a href="#" class="shop-button">Customize</a>
+                            </div>
+                        </div>
+                       <div class="grid-container2"></div>
+                       
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Featured</div>
+                        <div>Shoes</div>
+                        <div>Clothing</div>
+                        <div>Kids</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-containert1">
+                        <div></div>
+                        <div>Air Force 1</div>
+                        <div>All Shoes</div>
+                        <div>All Clothing</div>
+                        <div>Infant & Toddler Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Jordan 1</div>
+                        <div>Jordan Shoes</div>
+                        <div>Tops & T-Shirts</div>
+                        <div>Kids Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Metcon</div>
+                        <div>Running Shoes</div>
+                        <div>Shorts</div>
+                        <div>Kids Basketball Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="grid-container"></div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+                       <div class="flex-container2">
+                        <div></div>
+                        <div>Air Max 270</div>
+                        <div>Basketball Shoes</div>
+                        <div>Hoodies & Pullovers</div>
+                        <div>Kids Running Shoes</div>
+                        <div></div>
+                       </div>
+            
+</body>
+</html>

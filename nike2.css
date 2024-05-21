@@ -1,0 +1,97 @@
+<style>
+        * {
+            box-sizing: border-box;
+        } 
+        
+        header {
+            background-color: whitesmoke;
+            color: black;
+            padding: 30px;
+            font-size: 12.5px;
+            font-weight: lighter;
+            text-align:center; 
+            
+        }
+        
+        .flex-container {
+            display: flex;
+            height: 40px;
+            justify-content: flex-end;
+            align-items: center;
+            letter-spacing: 2px;
+            flex-direction: row;
+        }
+        
+        .flex-container2 {
+            display: flex;
+            background-color: white;
+            height: 40px;
+            color: black;
+            justify-content: space-around;
+            align-items: center;
+            letter-spacing: 2px;
+            flex-direction: row;
+        }
+
+        .flex-container3 {
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 4px;
+            flex-direction: row;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+        
+        .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 20px;
+        }
+        
+        .grid-container1{
+            width: 1px;
+            height: 10px;
+            display: inline-block;
+            margin: 0 auto;
+            position: relative;
+            justify-content: space-between;
+            padding: 0%;
+            border: 1px;
+        }
+        
+
+        .ptext{
+            color: aliceblue;
+            position: absolute;
+            top: 70%;
+            width: 100%;
+            text-align: center;
+            letter-spacing: normal;
+            font-size: 100px;
+            margin: 0%;
+            padding: 0%;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .grid-container {
+            display: grid;
+            width: 50px;
+            height: 50px;
+            display:inline-block;
+            margin: 0 auto;
+        }
+        
+        .grid-container2 {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            font-size: 50px;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+    </style>
